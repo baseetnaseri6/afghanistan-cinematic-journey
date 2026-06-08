@@ -1,0 +1,239 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #000;
+  color: white;
+}
+
+::selection {
+  background: rgba(103, 232, 249, 0.35);
+  color: white;
+}
+
+.premium-card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(22px);
+}
+
+.premium-title {
+  background: linear-gradient(90deg, #ffffff, #a5f3fc, #ffffff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.cinematic-grid {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 70px 70px;
+  mask-image: radial-gradient(circle at center, black, transparent 75%);
+}
+
+@keyframes modalIn {
+  from { opacity: 0; transform: translateY(28px) scale(0.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes imageSlowZoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.08); }
+}
+
+@keyframes softGlow {
+  0%, 100% { filter: drop-shadow(0 0 0 rgba(34, 211, 238, 0)); }
+  50% { filter: drop-shadow(0 0 16px rgba(34, 211, 238, 0.8)); }
+}
+
+.modal-in {
+  animation: modalIn 0.35s ease-out both;
+}
+
+.image-slow-zoom {
+  animation: imageSlowZoom 8s ease-in-out infinite alternate;
+}
+
+.map-province-active {
+  animation: softGlow 2s ease-in-out infinite;
+}
+
+.section-safe {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.hero-title-size {
+  font-size: clamp(4rem, 12vw, 9rem);
+}
+
+.section-title-size {
+  font-size: clamp(3rem, 8vw, 6.5rem);
+}
+
+.safe-container {
+  width: min(92vw, 1280px);
+  margin-inline: auto;
+}
+
+
+.modal-in::-webkit-scrollbar{
+  display:none;
+}
+
+.modal-in{
+  scrollbar-width:none;
+}
+
+.district-scroll::-webkit-scrollbar{
+  display:none;
+}
+
+.district-scroll{
+  scrollbar-width:none;
+}
+
+.district-scroll::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+.district-scroll {
+  scrollbar-width: none;
+}
+
+@keyframes storyImageBreath {
+  0% {
+    transform: scale(1.04);
+  }
+  100% {
+    transform: scale(1.13);
+  }
+}
+
+.story-bg-breathing {
+  animation: storyImageBreath 9s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+
+section {
+  margin-top: -1px;
+  background-color: #000;
+}
+
+main {
+  background: #000;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ending-particle,
+  .ending-word,
+  .ending-quote {
+    animation: none !important;
+  }
+}
+
+/* Global cinematic section shadows */
+section {
+  position: relative;
+  overflow: hidden;
+  background: #000;
+  margin-top: -1px;
+  box-shadow:
+    inset 0 120px 140px rgba(0, 0, 0, 0.72),
+    inset 0 -150px 160px rgba(0, 0, 0, 0.82);
+}
+
+section::before,
+section::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 5;
+}
+
+section::before {
+  top: 0;
+  height: 180px;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(34, 211, 238, 0.08), transparent 45%),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0));
+}
+
+section::after {
+  bottom: 0;
+  height: 220px;
+  background:
+    radial-gradient(circle at 50% 100%, rgba(34, 211, 238, 0.07), transparent 45%),
+    linear-gradient(to top, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0));
+}
+
+/* Keep popup/modal clean, not affected by section shadows */
+.fixed[role="dialog"],
+.modal-scroll {
+  box-shadow: none;
+}
+
+/* Remove visible hard section lines */
+main {
+  background: #000;
+}
+
+/* FIX: clean cinematic dark shadows only */
+section {
+  margin-top: -1px !important;
+  background: #000 !important;
+  box-shadow:
+    inset 0 90px 120px rgba(0,0,0,0.75),
+    inset 0 -120px 150px rgba(0,0,0,0.85) !important;
+}
+
+section::before {
+  content: "" !important;
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  top: 0 !important;
+  height: 130px !important;
+  pointer-events: none !important;
+  z-index: 4 !important;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.88),
+    rgba(0,0,0,0.45),
+    transparent
+  ) !important;
+}
+
+section::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  height: 160px !important;
+  pointer-events: none !important;
+  z-index: 4 !important;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.92),
+    rgba(0,0,0,0.48),
+    transparent
+  ) !important;
+}
+
+/* No colored fog blocks between sections */
+main {
+  background: #000 !important;
+}
+
+
+
+

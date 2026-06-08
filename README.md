@@ -232,5 +232,5 @@ It combines technology, design, and culture to create an engaging and educationa
 
 # Author
 
-Mohamad Baseet Naseri
+Mohammad Baseet Naseri
 

@@ -186,41 +186,7 @@ Fully optimized for:
 
 ---
 
-# Project Structure
 
-text app/ components/ sections/ public/  ├── images/  ├── maps/ screenshots/ 
-
----
-
-# Screenshots
-
-## Landing Page
-
-Landing Page
-
-## Story Chapter
-
-Chapter
-
-## Culture
-
-Culture
-
-## Map
-
-Map
-
-## Province Details
-
-Province Details
-
-## Province Story
-
-Province Story
-
-## Timeline
-
-Timeline
 
 ---
 

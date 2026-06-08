@@ -26,7 +26,7 @@ Built with modern web technologies and immersive storytelling techniques, this p
 
 ### Province Details Modal
 
-![Map Details](screenshots/map.details.jpg)
+![Map Details](screenshots/map-details.jpg)
 
 ### Province Information
 

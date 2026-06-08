@@ -1,4 +1,3 @@
-}
 # Afghanistan Travel Story
 
 A cinematic digital journey through Afghanistan's history, culture, landscapes, people, and provinces.

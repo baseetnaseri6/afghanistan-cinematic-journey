@@ -185,10 +185,6 @@ Fully optimized for:
 
 ---
 
-
-
----
-
 # Installation
 
 Clone the repository:

@@ -40,7 +40,7 @@ Built with modern web technologies and immersive storytelling techniques, this p
 
 # Overview
 
-Afghanistan Travel Story is an immersive storytelling platform designed to showcase the beauty, history, culture, and diversity of Afghanistan.
+Afghanistan Travel Story is an immersive storytelling platform designed to showcase the beauty, history, culture and diversity of Afghanistan.
 
 Instead of presenting information through traditional pages, the project uses cinematic transitions, smooth scrolling, visual storytelling, and interactive exploration to create a unique digital experience.
 

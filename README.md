@@ -2,7 +2,7 @@
 
 A cinematic digital journey through Afghanistan's history, culture, landscapes, people and provinces.
 
-Built with modern web technologies and immersive storytelling techniques, this project transforms information into a visual experience. Visitors can explore Afghanistan through animated chapters, interactive maps, province stories, cultural highlights, and historical timelines.
+Built with modern web technologies and immersive storytelling techniques, this project transforms information into a visual experience. Visitors can explore Afghanistan through animated chapters, interactive maps, province stories, cultural highlights and historical timelines.
 
 ---
 

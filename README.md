@@ -44,7 +44,7 @@ Afghanistan Travel Story is an immersive storytelling platform designed to showc
 
 Instead of presenting information through traditional pages, the project uses cinematic transitions, smooth scrolling, visual storytelling, and interactive exploration to create a unique digital experience.
 
-The goal of the project is to allow visitors to discover Afghanistan through landscapes, traditions, provinces, historical events, famous locations, and cultural heritage.
+The goal of the project is to allow visitors to discover Afghanistan through landscapes, traditions, provinces, historical events, famous locations and cultural heritage.
 
 ---
 
